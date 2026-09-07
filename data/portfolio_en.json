@@ -209,11 +209,6 @@
   ],
   "awards": [
     {
-      "date": "",
-      "name": "Outstanding Graduate, Beihang University",
-      "award": "Honor"
-    },
-    {
       "date": "2025.08",
       "name": "China International College Students’ Innovation Competition — Beijing, Main Track",
       "award": "First Prize"
@@ -259,14 +254,54 @@
       "award": "Third Prize"
     },
     {
+      "date": "2025",
+      "name": "CETC Ceyear Scholarship",
+      "award": "Recipient"
+    },
+    {
       "date": "2024.12",
       "name": "National Undergraduate Mathematics Competition — Preliminary Round",
       "award": "Third Prize"
     },
     {
-      "date": "2025",
-      "name": "CETC Ceyear Scholarship",
-      "award": "Recipient"
+      "date": "2024.08",
+      "name": "National Undergraduate Electronic Design Contest — Beijing",
+      "award": "First Prize"
+    },
+    {
+      "date": "2024.06",
+      "name": "Electronic Information and Intelligent Hardware Innovation Competition",
+      "award": "Second Prize"
+    },
+    {
+      "date": "2024.05",
+      "name": "National Electronics Design and Skills Competition — Lanqiao Cup, Provincial Round",
+      "award": "Third Prize"
+    },
+    {
+      "date": "2024.03",
+      "name": "Beihang Feng Ru Cup — Main Track, Paper Category",
+      "award": "Third Prize"
+    },
+    {
+      "date": "2024.01",
+      "name": "Winter Social Practice",
+      "award": "University-level Third Prize"
+    },
+    {
+      "date": "2023.12",
+      "name": "National Undergraduate Mathematics Competition — Preliminary Round",
+      "award": "Second Prize"
+    },
+    {
+      "date": "2022.09–2023.09",
+      "name": "Innovation and Entrepreneurship Center, Shi E College",
+      "award": "Outstanding Student Leader"
+    },
+    {
+      "date": "",
+      "name": "Outstanding Graduate, Beihang University",
+      "award": "Honor"
     },
     {
       "date": "",
@@ -282,6 +317,11 @@
       "date": "",
       "name": "Beihang Social Work Excellence Scholarship",
       "award": "Second Prize"
+    },
+    {
+      "date": "",
+      "name": "Beijing Volunteer Star Rating",
+      "award": "One-star Volunteer"
     }
   ],
   "education": [
@@ -298,7 +338,7 @@
   ],
   "published": "Published",
   "experience_title": "Experience",
-  "experience_subtitle": "Volunteering & community service",
+  "experience_subtitle": "Volunteering, student leadership & service",
   "experience": [
     {
       "date": "2024.07 — 2024.08",
@@ -307,6 +347,18 @@
       "description": "Participated in summer volunteer teaching at Zhijin No. 4 Primary School.",
       "url": "https://mp.weixin.qq.com/s/-MsElxI2pnd-l-t7qsdIYw",
       "link_label": "Read the story ↗"
+    },
+    {
+      "date": "2023.09 — 2024.09",
+      "title": "Head of Publicity",
+      "organization": "Innovation and Entrepreneurship Center, Shi E College",
+      "description": "Served as head of publicity for the college’s Innovation and Entrepreneurship Center."
+    },
+    {
+      "date": "2022.09 — 2024.09",
+      "title": "Class representative roles",
+      "organization": "Beihang University",
+      "description": "2022.09–2023.09: welfare and safety representative for Class 227312. 2023.09–2024.09: welfare representative for Class 220231."
     }
   ]
 }

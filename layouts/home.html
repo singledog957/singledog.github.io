@@ -52,7 +52,7 @@
   </section>
   <section id="experience" class="section wrap">
     <div class="section-label"><span>06 / EXPERIENCE</span><h2>{{ $d.experience_title }}</h2><p>{{ $d.experience_subtitle }}</p></div>
-    <div class="section-content">{{ range $d.experience }}<article class="experience-item"><time>{{ .date }}</time><h3>{{ .title }}</h3><p class="experience-organization">{{ .organization }}</p><p>{{ .description }}</p><a class="text-link small" href="{{ .url }}">{{ .link_label }}</a></article>{{ end }}</div>
+    <div class="section-content">{{ range $d.experience }}<article class="experience-item"><time>{{ .date }}</time><h3>{{ .title }}</h3><p class="experience-organization">{{ .organization }}</p><p>{{ .description }}</p>{{ if .url }}<a class="text-link small" href="{{ .url }}">{{ .link_label }}</a>{{ end }}</article>{{ end }}</div>
   </section>
 </main>
 {{ partial "academic-footer.html" . }}
