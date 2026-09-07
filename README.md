@@ -12,8 +12,8 @@ Based on HugoBlox Academic CV, with a customized academic layout and bilingual c
 Hugo Extended 0.162.0 and Go are required. `pnpm dev` starts the preview; `pnpm build` generates `dist/`. The customized layouts use plain CSS and do not need Tailwind compilation.
 
 ## GitHub Pages
-Target: https://github.com/singledog957/singledog.github.io
-Expected URL: https://singledog957.github.io/singledog.github.io/
+Target: https://github.com/singledog957/singledog957.github.io
+Expected URL: https://singledog957.github.io/
 
 Under repository Settings → Pages, select GitHub Actions. The workflow is restricted to the exact target repository and publishes pushes to `main`. No Sites service is used by this version.
 
