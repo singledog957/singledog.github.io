@@ -1,0 +1,231 @@
+{
+  "name": "Yuxin Xie",
+  "alternate": "谢雨鑫",
+  "university": "Beihang University",
+  "degree": "B.Eng. in Electronic Information Engineering",
+  "blog": "Blog",
+  "skip": "Skip to content",
+  "nav": [
+    "About",
+    "Publications",
+    "Research",
+    "Projects"
+  ],
+  "heading": "Robust machine learning for analog computing",
+  "bio": [
+    "My research focuses on noise and non-idealities in analog compute-in-memory (CIM). I study hardware-aware training, knowledge distillation, and error modeling to improve the robustness of neural network inference.",
+    "I studied Electronic Information Engineering at Beihang University, with hands-on experience in embedded systems and electronic design. This website brings together my research, publications, engineering projects, and software explorations."
+  ],
+  "interest_title": "Research interests",
+  "interests": [
+    "Analog CIM non-ideality modeling",
+    "Noise-aware training and distillation",
+    "Efficient calibration and compensation"
+  ],
+  "education_title": "Education",
+  "education_note": "Rank: 2/33 · CET-6: 639",
+  "view_research": "Explore research",
+  "papers_title": "Publications",
+  "papers_subtitle": "Submitted and accepted work",
+  "research_title": "Research",
+  "research_subtitle": "Noise modeling and robust inference",
+  "engineering_title": "Engineering",
+  "engineering_subtitle": "Electronic design and implementation",
+  "projects_title": "Other projects",
+  "projects_subtitle": "Software beyond my research",
+  "awards_title": "Awards & teaching",
+  "result_label": "Selected result",
+  "code": "Code",
+  "paper": "Paper",
+  "unavailable": "Paper link not yet provided",
+  "review": "Under review",
+  "forthcoming": "Accepted · Forthcoming",
+  "no_paper": "No publication",
+  "blog_title": "Technical blog",
+  "blog_description": "Research notes, project write-ups, and reflections",
+  "teaching_title": "Teaching assistant",
+  "teaching": "Teaching assistant for “Microcontroller Fundamentals” and “Electronic Design Training” across three semesters.",
+  "site_title": "Yuxin Xie · Academic Homepage",
+  "description": "Yuxin Xie — analog compute-in-memory, hardware-aware machine learning, publications, and electronic engineering projects.",
+  "publications": [
+    {
+      "venue": "DATE 2027",
+      "status": "Under review",
+      "authorship": "First author",
+      "title": "CNKD · Noise-robust and data-efficient knowledge distillation for vision transformers",
+      "summary": "Clean-to-noisy knowledge distillation and the trade-off between robust accuracy and training data access.",
+      "paper_url": "",
+      "paper_state": "review"
+    },
+    {
+      "venue": "ICSICT 2026",
+      "status": "Accepted · Forthcoming",
+      "authorship": "Second author · 2/7",
+      "title": "RBGR: Backward-Only Residual Gradient Reweighting for Robust Analog CIM Inference",
+      "summary": "Backward-only gradient reweighting for residual networks under analog CIM non-idealities.",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "ICCD 2026",
+      "status": "Accepted · Forthcoming",
+      "authorship": "Third author · 3/7",
+      "title": "INFER: Implicit Neural Framework for Efficient Representation of Noise in Analog CIM",
+      "summary": "Implicit neural representations of noise in analog compute-in-memory.",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "ASP-DAC 2027",
+      "status": "Accepted · Forthcoming",
+      "authorship": "Fourth author · 4/7",
+      "title": "ASSERT: Adaptive Stochastic Sampling for Robust Diffusion Models on Analog Compute-in-Memory Hardware",
+      "summary": "Adaptive stochastic sampling for diffusion models on analog CIM hardware.",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "DAC 2027",
+      "status": "Accepted · Forthcoming",
+      "authorship": "Sixth author · 6/9",
+      "title": "IGNITE: An Inquisitive and Graph-Aware Neural CircuitSimulator with Two-Stage Enhanced In-Context Learning",
+      "summary": "Graph-aware neural circuit simulation with two-stage enhanced in-context learning.",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "ISEDA 2027",
+      "status": "Accepted · Forthcoming",
+      "authorship": "Ninth author · 9/9",
+      "title": "Toward Reliable Analog In-Memory Computing: Co-Design of Hardware-Aware Input Processing and Accuracy-Optimized Weight Mapping",
+      "summary": "Co-design of hardware-aware input processing and accuracy-oriented weight mapping.",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    }
+  ],
+  "research": [
+    {
+      "short": "CNKD",
+      "title": "Noise-robust distillation for vision transformers",
+      "category": "Noise-aware training · Data efficiency",
+      "summary": "Implemented clean-teacher / noisy-student distillation with clean-weight restoration, gradient scaling, and vulnerability-guided mixed sampling. Studied the trade-off between robust accuracy and training data access.",
+      "result": "49.14% fewer training sample visits with a 0.74-point Top-1 trade-off on ViT-Tiny at σ=0.2, relative to the project’s 50%-ImageNet training pool; evaluated over five noise realizations.",
+      "repo": "",
+      "paper_state": "review",
+      "paper_url": ""
+    },
+    {
+      "short": "RBGR",
+      "title": "Backward-only residual gradient reweighting",
+      "category": "Robust inference · Autograd",
+      "summary": "Reweighted shortcut gradients only during backpropagation, preserving the forward graph and inference parameter count. Evaluated robustness to weight perturbations and software ADC quantization.",
+      "result": "91.98% accuracy on ResNet-18 / CIFAR-10 with 5-bit software ADC and α=0.8: 1.64 percentage points above Standard in this configuration.",
+      "repo": "",
+      "paper_state": "forthcoming",
+      "paper_url": ""
+    },
+    {
+      "short": "ACTIC",
+      "title": "Error compensation and calibration for analog CIM",
+      "category": "Error modeling · Calibration",
+      "summary": "Designed layer-wise and column-wise compensation, combining an input-L2-norm-conditioned error model, endpoint interpolation, and stratified calibration sampling.",
+      "result": "Mean MAE decreased from 2.4350 to 2.0680 across 60 layers, using 100 frames per layer at noise level 7.0.",
+      "repo": "https://github.com/singledog957/ACTIC2025",
+      "paper_state": "no_paper",
+      "paper_url": ""
+    },
+    {
+      "short": "INFER",
+      "title": "Implicit neural representations of CIM noise",
+      "category": "Implicit representations · Physical priors",
+      "summary": "Built a two-stage SIREN residual model with ideal multiplication and scaling as physical priors to capture cell-level and array-level non-idealities.",
+      "result": "Validation MSE of 8.623 for a fixed weight and gain configuration on a 128×128 array; experiments also covered 448×448 arrays.",
+      "repo": "",
+      "paper_state": "forthcoming",
+      "paper_url": ""
+    },
+    {
+      "short": "ADAPT",
+      "title": "Layered training under compound noise",
+      "category": "Gradient estimation · Distillation",
+      "summary": "Used an AI-assisted research process to design and evaluate Pathwise gradients for continuous noise, Hard-STE for ADC quantization, knowledge distillation, and noise sampling strategies.",
+      "result": "Across 12 CIFAR-10 configurations and three training seeds each, logits KD improved accuracy by about 1.02–1.34 percentage points across six gradient/sampling settings.",
+      "repo": "",
+      "paper_state": "no_paper",
+      "paper_url": ""
+    }
+  ],
+  "engineering": [
+    {
+      "date": "2025.08",
+      "title": "Monocular target measurement system",
+      "description": "Developed the core algorithms for non-contact distance measurement, complex-shape dimension recognition, and tilt correction. Distance error below 2 cm within 2 m; dimension error at most 0.5 cm.",
+      "result": "National Second Prize and Beijing First Prize, National Undergraduate Electronic Design Contest",
+      "repo": "https://github.com/singledog957/NUEDC2025"
+    },
+    {
+      "date": "2024.09–2025.02",
+      "title": "Wearable health-monitoring device",
+      "description": "Developed real-time ECG and PPG acquisition and processing, with multi-sensor fusion for heart-rate and oxygen-saturation estimation and HRV analysis.",
+      "result": "Project outcome: one published paper in a JCR Q1 journal"
+    },
+    {
+      "date": "2024.08",
+      "title": "Single-phase power analyzer",
+      "description": "Implemented voltage and current acquisition and harmonic analysis. Total power consumption at most 50 mW, analysis error at most 1%, and RMS analysis through the 13th harmonic.",
+      "result": "Beijing First Prize, Electronic Design Contest"
+    }
+  ],
+  "demos": [
+    {
+      "name": "HealthVista",
+      "url": "https://demo-ha.singledog233.top",
+      "domain": "demo-ha.singledog233.top",
+      "description": "Collects medical records, extracts and deduplicates indicators with OCR, tracks long-term health trends, and uses LLMs to provide health analysis and guidance."
+    },
+    {
+      "name": "Super",
+      "url": "https://demo-super.singledog233.top",
+      "domain": "demo-super.singledog233.top",
+      "description": "An internal Agent debugging platform extensively customized from Mastra for business-specific workflows and agent development."
+    }
+  ],
+  "awards": [
+    {
+      "name": "National Undergraduate Electronic Design Contest",
+      "award": "National Second Prize · Beijing First Prize"
+    },
+    {
+      "name": "Beijing Integrated Circuit Design Competition",
+      "award": "Second Prize"
+    },
+    {
+      "name": "Beihang Feng Ru Cup",
+      "award": "1 First Prize · 2 Second Prizes"
+    },
+    {
+      "name": "China International College Students’ Innovation Competition",
+      "award": "First Prize"
+    },
+    {
+      "name": "Capital Challenge Cup",
+      "award": "2 First Prizes"
+    },
+    {
+      "name": "National Undergraduate Mathematics Competition",
+      "award": "Second Prize"
+    },
+    {
+      "name": "Beihang Academic Competition Scholarship",
+      "award": "Grand Prize"
+    },
+    {
+      "name": "Beihang Academic Excellence Scholarship",
+      "award": "First Prize"
+    },
+    {
+      "name": "Beihang Social Work Excellence Scholarship",
+      "award": "Second Prize"
+    }
+  ]
+}

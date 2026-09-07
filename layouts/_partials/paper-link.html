@@ -1,0 +1,2 @@
+{{ $d := .labels }}{{ $p := .item }}
+{{ with $p.paper_url }}<a class="text-link small paper-link" href="{{ . }}">{{ $d.paper }} ↗</a>{{ else }}<span class="paper-disabled" aria-disabled="true" title="{{ $d.unavailable }}">{{ $d.paper }} <span>({{ index $d $p.paper_state }})</span></span>{{ end }}

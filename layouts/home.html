@@ -1,54 +1,54 @@
+{{ $d := index hugo.Data (printf "portfolio_%s" .Language.Lang) }}
 <!doctype html>
-<html lang="zh-CN">
+<html lang="{{ .Language.Locale }}">
 {{ partial "academic-head.html" . }}
 <body>
-<a class="skip" href="#about">跳至正文</a>
+<a class="skip" href="#about">{{ $d.skip }}</a>
 {{ partial "academic-nav.html" . }}
 <main id="main">
   <section id="about" class="intro wrap">
     <div class="profile">
-      <img class="portrait" src="{{ "images/profile.png" | relURL }}" alt="谢雨鑫" width="180" height="220">
-      <h1>谢雨鑫</h1><p class="roman-name">Yuxin Xie</p>
-      <p class="affiliation">北京航空航天大学<br>电子信息工程 · 本科</p>
+      <div class="portrait-frame"><img class="personal-portrait" src="{{ "images/personal_page.jpg" | relURL }}" alt="Yuxin Xie" width="1920" height="1280"></div>
+      <h1>{{ $d.name }}</h1><p class="roman-name">{{ $d.alternate }}</p>
+      <p class="affiliation">{{ $d.university }}<br>{{ $d.degree }}</p>
       <a class="email" href="mailto:22373062@buaa.edu.cn">22373062@buaa.edu.cn</a>
-      <div class="profile-links"><a href="https://github.com/singledog957">GitHub ↗</a><a href="https://www.singledog233.top">博客 ↗</a></div>
+      <div class="profile-links"><a href="https://github.com/singledog957">GitHub ↗</a><a href="https://www.singledog233.top">{{ $d.blog }} ↗</a></div>
     </div>
     <div class="biography">
       <p class="eyebrow">COMPUTE-IN-MEMORY & HARDWARE-AWARE ML</p>
-      <h2>让模型适应真实计算中的非理想性。</h2>
-      <p>我的研究围绕模拟存算一体（Analog CIM）中的噪声与误差展开，关注如何通过硬件感知训练、知识蒸馏与误差建模，提高神经网络的推理鲁棒性。</p>
-      <p>我在北京航空航天大学学习电子信息工程，也参与嵌入式系统与电子设计实践。这里记录我的研究、论文和项目，以及一些研究之外的软件作品。</p>
-      <div class="academic-basics"><div><h3>研究兴趣</h3><ul><li>模拟存算非理想性建模</li><li>噪声感知训练与知识蒸馏</li><li>高效校准与算法补偿</li></ul></div><div><h3>教育经历</h3><p><b>北京航空航天大学</b><br>电子信息工程，本科<br><span class="muted">2022.09 — 2026.06</span></p><p class="education-note">专业排名 2/33 · CET-6 639</p></div></div>
-      <a class="text-link" href="#research">查看研究项目 <span>↓</span></a>
+      <h2>{{ $d.heading }}</h2>
+      {{ range $d.bio }}<p>{{ . }}</p>{{ end }}
+      <div class="academic-basics"><div><h3>{{ $d.interest_title }}</h3><ul>{{ range $d.interests }}<li>{{ . }}</li>{{ end }}</ul></div><div><h3>{{ $d.education_title }}</h3><p><b>{{ $d.university }}</b><br>{{ $d.degree }}<br><span class="muted">2022.09 — 2026.06</span></p><p class="education-note">{{ $d.education_note }}</p></div></div>
+      <a class="text-link" href="#research">{{ $d.view_research }} <span>↓</span></a>
     </div>
   </section>
   <section id="publications" class="section wrap">
-    <div class="section-label"><span>01 / PUBLICATIONS</span><h2>论文</h2><p>在投与已录用工作</p></div>
+    <div class="section-label"><span>01 / PUBLICATIONS</span><h2>{{ $d.papers_title }}</h2><p>{{ $d.papers_subtitle }}</p></div>
     <div class="section-content"><div class="paper-list">
-      {{ range site.Data.portfolio.publications }}
-      <article class="paper"><div class="paper-meta"><span class="venue">{{ .venue }}</span><span>{{ .status }}</span><span>{{ .authorship }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p>{{ with .project }}<a class="text-link small" href="{{ . | relURL }}">研究详情 ↗</a>{{ end }}</article>
+      {{ range $d.publications }}
+      <article class="paper"><div class="paper-meta"><span class="venue">{{ .venue }}</span><span>{{ .status }}</span><span>{{ .authorship }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p>{{ partial "paper-link.html" (dict "item" . "labels" $d) }}</article>
       {{ end }}
-    </div><p class="editorial-note">CNKD 处于投稿阶段；已录用条目尚未统一列出正式出版链接。</p></div>
+    </div></div>
   </section>
   <section id="research" class="section wrap">
-    <div class="section-label"><span>02 / RESEARCH</span><h2>存算研究</h2><p>从噪声表征到鲁棒训练</p></div>
-    <div class="section-content research-list">{{ range where site.RegularPages "Section" "research" }}{{ end }}
-      {{ range (where site.RegularPages "Section" "research").ByWeight }}
-      <article class="research-item"><div class="research-top"><span class="project-id">{{ .Params.short }}</span><span class="muted">{{ .Params.category }}</span></div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Params.summary }}</p><div class="result"><span>代表结果</span>{{ .Params.result }}</div><div class="project-actions"><a class="text-link small" href="{{ .RelPermalink }}">方法与实验 ↗</a>{{ with .Params.repo }}<a class="text-link small" href="{{ . }}">源代码 ↗</a>{{ end }}</div></article>
+    <div class="section-label"><span>02 / RESEARCH</span><h2>{{ $d.research_title }}</h2><p>{{ $d.research_subtitle }}</p></div>
+    <div class="section-content research-list">
+      {{ range $d.research }}
+      <article class="research-item"><div class="research-top"><span class="project-id">{{ .short }}</span><span class="muted">{{ .category }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p><div class="result"><span>{{ $d.result_label }}</span>{{ .result }}</div><div class="project-actions">{{ partial "paper-link.html" (dict "item" . "labels" $d) }}{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ $d.code }} ↗</a>{{ end }}</div></article>
       {{ end }}
     </div>
   </section>
   <section id="engineering" class="section wrap">
-    <div class="section-label"><span>03 / ENGINEERING</span><h2>工程实践</h2><p>电子设计与系统实现</p></div>
-    <div class="section-content">{{ range site.Data.portfolio.engineering }}<article class="engineering-item"><div class="engineering-date">{{ .date }}</div><div><h3>{{ .title }}</h3><p>{{ .description }}</p><p class="achievement">{{ .result }}</p>{{ with .repo }}<a class="text-link small" href="{{ . }}">项目源代码 ↗</a>{{ end }}</div></article>{{ end }}</div>
+    <div class="section-label"><span>03 / ENGINEERING</span><h2>{{ $d.engineering_title }}</h2><p>{{ $d.engineering_subtitle }}</p></div>
+    <div class="section-content">{{ range $d.engineering }}<article class="engineering-item"><div class="engineering-date">{{ .date }}</div><div><h3>{{ .title }}</h3><p>{{ .description }}</p><p class="achievement">{{ .result }}</p>{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ $d.code }} ↗</a>{{ end }}</div></article>{{ end }}</div>
   </section>
   <section id="projects" class="section wrap">
-    <div class="section-label"><span>04 / EXPLORATIONS</span><h2>其他作品</h2><p>研究之外的开发实践</p></div>
-    <div class="section-content"><div class="demo-grid">{{ range site.Data.portfolio.demos }}<a class="demo" href="{{ .url }}"><span class="demo-label">LIVE DEMO <span>↗</span></span><h3>{{ .name }}</h3><p>{{ .description }}</p><span class="demo-domain">{{ .domain }}</span></a>{{ end }}</div><a class="blog-link" href="https://www.singledog233.top"><div><span class="eyebrow">NOTES & WRITING</span><h3>技术博客</h3><p>研究笔记、项目记录与日常思考</p></div><span aria-hidden="true">↗</span></a></div>
+    <div class="section-label"><span>04 / EXPLORATIONS</span><h2>{{ $d.projects_title }}</h2><p>{{ $d.projects_subtitle }}</p></div>
+    <div class="section-content"><div class="demo-grid">{{ range $d.demos }}<a class="demo" href="{{ .url }}"><span class="demo-label">LIVE DEMO <span>↗</span></span><h3>{{ .name }}</h3><p>{{ .description }}</p><span class="demo-domain">{{ .domain }}</span></a>{{ end }}</div><a class="blog-link" href="https://www.singledog233.top"><div><span class="eyebrow">NOTES & WRITING</span><h3>{{ $d.blog_title }}</h3><p>{{ $d.blog_description }}</p></div><span aria-hidden="true">↗</span></a></div>
   </section>
   <section id="awards" class="section wrap">
-    <div class="section-label"><span>05 / RECOGNITION</span><h2>荣誉与教学</h2></div>
-    <div class="section-content"><ul class="awards">{{ range site.Data.portfolio.awards }}<li><span>{{ .name }}</span><b>{{ .award }}</b></li>{{ end }}</ul><div class="teaching"><h3>课程助教</h3><p>累计三学期担任“单片机基础”“电子设计基础训练”课程助教。</p></div></div>
+    <div class="section-label"><span>05 / RECOGNITION</span><h2>{{ $d.awards_title }}</h2></div>
+    <div class="section-content"><ul class="awards">{{ range $d.awards }}<li><span>{{ .name }}</span><b>{{ .award }}</b></li>{{ end }}</ul><div class="teaching"><h3>{{ $d.teaching_title }}</h3><p>{{ $d.teaching }}</p></div></div>
   </section>
 </main>
 {{ partial "academic-footer.html" . }}

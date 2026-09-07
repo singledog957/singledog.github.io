@@ -1,0 +1,231 @@
+{
+  "publications": [
+    {
+      "venue": "DATE 2027",
+      "status": "在投",
+      "authorship": "第一作者",
+      "title": "CNKD · 视觉 Transformer 噪声鲁棒性与数据高效知识蒸馏研究",
+      "summary": "干净教师到带噪学生的蒸馏恢复，以及精度与训练样本预算之间的权衡。",
+      "paper_url": "",
+      "paper_state": "review"
+    },
+    {
+      "venue": "ICSICT 2026",
+      "status": "已录用 · 未见刊",
+      "authorship": "第二作者 · 2/7",
+      "title": "RBGR: Backward-Only Residual Gradient Reweighting for Robust Analog CIM Inference",
+      "summary": "通过反向梯度重加权研究模拟存算环境中的残差网络鲁棒性。",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "ICCD 2026",
+      "status": "已录用 · 未见刊",
+      "authorship": "第三作者 · 3/7",
+      "title": "INFER: Implicit Neural Framework for Efficient Representation of Noise in Analog CIM",
+      "summary": "使用隐式神经表示研究模拟存算中的噪声响应。",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "ASP-DAC 2027",
+      "status": "已录用 · 未见刊",
+      "authorship": "第四作者 · 4/7",
+      "title": "ASSERT: Adaptive Stochastic Sampling for Robust Diffusion Models on Analog Compute-in-Memory Hardware",
+      "summary": "模拟存算硬件上扩散模型的鲁棒性与自适应随机采样。",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "DAC 2027",
+      "status": "已录用 · 未见刊",
+      "authorship": "第六作者 · 6/9",
+      "title": "IGNITE: An Inquisitive and Graph-Aware Neural CircuitSimulator with Two-Stage Enhanced In-Context Learning",
+      "summary": "结合图结构与两阶段上下文学习的神经电路模拟。",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    },
+    {
+      "venue": "ISEDA 2027",
+      "status": "已录用 · 未见刊",
+      "authorship": "第九作者 · 9/9",
+      "title": "Toward Reliable Analog In-Memory Computing: Co-Design of Hardware-Aware Input Processing and Accuracy-Optimized Weight Mapping",
+      "summary": "硬件感知输入处理与权重映射的协同设计。",
+      "paper_url": "",
+      "paper_state": "forthcoming"
+    }
+  ],
+  "engineering": [
+    {
+      "date": "2025.08",
+      "title": "单目视觉目标物测量装置",
+      "description": "负责主要算法开发，实现非接触测距、复杂图形尺寸识别与倾斜校正。2 m 内测距误差小于 2 cm，尺寸误差不超过 0.5 cm。",
+      "result": "全国大学生电子设计竞赛全国二等奖、北京市一等奖",
+      "repo": "https://github.com/singledog957/NUEDC2025"
+    },
+    {
+      "date": "2024.09–2025.02",
+      "title": "健康监测手环",
+      "description": "基于多传感器融合完成 ECG、PPG 信号实时采集与处理，提取心率、血氧指标并进行 HRV 分析。",
+      "result": "项目产出 JCR 一区已发表论文 1 篇"
+    },
+    {
+      "date": "2024.08",
+      "title": "单相功率分析仪",
+      "description": "负责主要代码开发，完成单相交流电压、电流采集与分析。整体功耗不超过 50 mW，分析误差不超过 1%，支持 13 次谐波有效值分析。",
+      "result": "北京市电子设计竞赛一等奖"
+    }
+  ],
+  "demos": [
+    {
+      "name": "健康视界",
+      "url": "https://demo-ha.singledog233.top",
+      "domain": "demo-ha.singledog233.top",
+      "description": "汇集病历、识别并整理健康指标，持续追踪变化，结合大模型提供健康分析与建议。"
+    },
+    {
+      "name": "Super",
+      "url": "https://demo-super.singledog233.top",
+      "domain": "demo-super.singledog233.top",
+      "description": "基于 Mastra 深度定制的内部 Agent 调试平台，支持业务场景适配与智能体开发调试。"
+    }
+  ],
+  "awards": [
+    {
+      "name": "全国大学生电子设计竞赛",
+      "award": "全国二等奖 · 北京赛区一等奖"
+    },
+    {
+      "name": "北京市集成电路设计大赛",
+      "award": "二等奖"
+    },
+    {
+      "name": "北航“冯如杯”",
+      "award": "一等奖 1 项 · 二等奖 2 项"
+    },
+    {
+      "name": "中国国际大学生创新大赛",
+      "award": "一等奖"
+    },
+    {
+      "name": "首都挑战杯",
+      "award": "一等奖 2 项"
+    },
+    {
+      "name": "全国大学生数学竞赛",
+      "award": "二等奖"
+    },
+    {
+      "name": "北航学科竞赛奖学金",
+      "award": "特等奖"
+    },
+    {
+      "name": "北航学习优秀奖学金",
+      "award": "一等奖"
+    },
+    {
+      "name": "北航社会工作优秀奖学金",
+      "award": "二等奖"
+    }
+  ],
+  "name": "谢雨鑫",
+  "alternate": "Yuxin Xie",
+  "university": "北京航空航天大学",
+  "degree": "电子信息工程 · 本科",
+  "blog": "博客",
+  "skip": "跳至正文",
+  "nav": [
+    "关于",
+    "论文",
+    "研究",
+    "作品"
+  ],
+  "heading": "面向模拟存算的鲁棒机器学习",
+  "bio": [
+    "我的研究围绕模拟存算一体（Analog CIM）中的噪声与误差展开，关注如何通过硬件感知训练、知识蒸馏与误差建模，提高神经网络的推理鲁棒性。",
+    "我在北京航空航天大学接受电子信息工程本科教育，也参与嵌入式系统与电子设计实践。这里记录我的研究、论文和项目，以及一些研究之外的软件作品。"
+  ],
+  "interest_title": "研究兴趣",
+  "interests": [
+    "模拟存算非理想性建模",
+    "噪声感知训练与知识蒸馏",
+    "高效校准与算法补偿"
+  ],
+  "education_title": "教育经历",
+  "education_note": "专业排名 2/33 · CET-6 639",
+  "view_research": "查看研究项目",
+  "papers_title": "论文",
+  "papers_subtitle": "在投与已录用工作",
+  "research_title": "存算研究",
+  "research_subtitle": "从噪声表征到鲁棒训练",
+  "engineering_title": "工程实践",
+  "engineering_subtitle": "电子设计与系统实现",
+  "projects_title": "其他作品",
+  "projects_subtitle": "研究之外的开发实践",
+  "awards_title": "荣誉与教学",
+  "result_label": "代表结果",
+  "code": "源代码",
+  "paper": "论文",
+  "unavailable": "论文链接暂未提供",
+  "review": "在投",
+  "forthcoming": "已录用 · 未见刊",
+  "no_paper": "暂无论文",
+  "blog_title": "技术博客",
+  "blog_description": "研究笔记、项目记录与日常思考",
+  "teaching_title": "课程助教",
+  "teaching": "累计三学期担任“单片机基础”“电子设计基础训练”课程助教。",
+  "site_title": "谢雨鑫 Yuxin Xie · 学术主页",
+  "description": "谢雨鑫的个人学术主页：模拟存算一体、硬件感知机器学习、论文与电子工程项目。",
+  "research": [
+    {
+      "short": "CNKD",
+      "title": "视觉 Transformer 噪声鲁棒蒸馏",
+      "category": "噪声感知训练 · 数据高效学习",
+      "summary": "研究干净教师到带噪学生的知识蒸馏，通过权重恢复、梯度缩放与混合采样，量化鲁棒精度和训练数据开销的权衡。",
+      "result": "训练样本访问量减少 49.14%，Top-1 下降 0.74 个百分点；基于 ViT-Tiny、σ=0.2、项目所用 ImageNet 50% 训练池。",
+      "repo": "",
+      "paper_state": "review",
+      "paper_url": ""
+    },
+    {
+      "short": "RBGR",
+      "title": "残差分支梯度重加权",
+      "category": "鲁棒推理 · 自动微分",
+      "summary": "仅在反向传播中调整 shortcut 梯度，在保持原始前向图与推理参数量的前提下，研究残差网络对存算权重扰动和 ADC 量化的容忍度。",
+      "result": "5-bit 软件 ADC 设置下，ResNet-18 / CIFAR-10 准确率 91.98%，较 Standard 提高 1.64 个百分点（α=0.8）。",
+      "repo": "",
+      "paper_state": "forthcoming",
+      "paper_url": ""
+    },
+    {
+      "short": "ACTIC",
+      "title": "存算推理误差补偿与校准",
+      "category": "误差建模 · 少样本校准",
+      "summary": "设计逐层逐列补偿框架，以输入 L2 范数刻画输入能量，结合端点插值与分层选帧，为不同输入生成动态补偿向量。",
+      "result": "60 层、每层 100 帧、噪声等级 7.0 的实验中，平均 MAE 从 2.4350 降至 2.0680。",
+      "repo": "https://github.com/singledog957/ACTIC2025",
+      "paper_state": "no_paper",
+      "paper_url": ""
+    },
+    {
+      "short": "INFER",
+      "title": "模拟存算噪声的隐式神经表示",
+      "category": "隐式表示 · 物理先验",
+      "summary": "以理想数字乘法与缩放为物理先验，利用双阶段 SIREN 残差模型，分别拟合单元级和阵列级的非理想性。",
+      "result": "128×128 固定权重与增益配置下，残差模型验证 MSE 为 8.623；完成 128×128 与 448×448 阵列实验。",
+      "repo": "",
+      "paper_state": "forthcoming",
+      "paper_url": ""
+    },
+    {
+      "short": "ADAPT",
+      "title": "复合噪声下的分层训练",
+      "category": "梯度估计 · 知识蒸馏",
+      "summary": "通过 AI 辅助研究设计与评估，区分连续噪声的 Pathwise 梯度与 ADC 量化的 Hard-STE，比较蒸馏目标和噪声采样方式。",
+      "result": "CIFAR-10 的 12 组配置 × 3 个训练种子实验中，Logits KD 在六种梯度/采样条件下均带来约 1.02–1.34 个百分点提升。",
+      "repo": "",
+      "paper_state": "no_paper",
+      "paper_url": ""
+    }
+  ]
+}
