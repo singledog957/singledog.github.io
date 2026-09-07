@@ -4,16 +4,16 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
+title: '谢雨鑫 · Yuxin Xie'
 # Website URL
-baseURL: 'https://example.com/'
+baseURL: 'https://yuxin-xie-academic.getdaijianai.chatgpt.site/'
 
 ############################
 ## LANGUAGE
 ############################
 
 defaultContentLanguage: en
-hasCJKLanguage: false
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
@@ -43,7 +43,7 @@ footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 disableAliases: true
 outputs:
-  home: [HTML, RSS, headers, redirects, backlinks]
+  home: [HTML, RSS]
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
