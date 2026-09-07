@@ -2,19 +2,20 @@
   "name": "Yuxin Xie",
   "alternate": "谢雨鑫",
   "university": "Beihang University",
-  "degree": "B.Eng. in Electronic Information Engineering",
+  "degree": "Master’s student",
   "blog": "Blog",
   "skip": "Skip to content",
   "nav": [
     "About",
     "Publications",
     "Research",
-    "Projects"
+    "Projects",
+    "Experience"
   ],
   "heading": "Robust machine learning for analog computing",
   "bio": [
     "My research focuses on noise and non-idealities in analog compute-in-memory (CIM). I study hardware-aware training, knowledge distillation, and error modeling to improve the robustness of neural network inference.",
-    "I studied Electronic Information Engineering at Beihang University, with hands-on experience in embedded systems and electronic design. This website brings together my research, publications, engineering projects, and software explorations."
+    "I am currently a master’s student and received my undergraduate education in Electronic Information Engineering at Beihang University. Alongside research, I work on embedded systems, electronic design, and software projects."
   ],
   "interest_title": "Research interests",
   "interests": [
@@ -26,14 +27,14 @@
   "education_note": "Rank: 2/33 · CET-6: 639",
   "view_research": "Explore research",
   "papers_title": "Publications",
-  "papers_subtitle": "Submitted and accepted work",
+  "papers_subtitle": "Published, accepted, and submitted work",
   "research_title": "Research",
   "research_subtitle": "Noise modeling and robust inference",
   "engineering_title": "Engineering",
   "engineering_subtitle": "Electronic design and implementation",
   "projects_title": "Other projects",
   "projects_subtitle": "Software beyond my research",
-  "awards_title": "Awards & teaching",
+  "awards_title": "Honors & awards",
   "result_label": "Selected result",
   "code": "Code",
   "paper": "Paper",
@@ -43,15 +44,12 @@
   "no_paper": "No publication",
   "blog_title": "Technical blog",
   "blog_description": "Research notes, project write-ups, and reflections",
-  "teaching_title": "Teaching assistant",
-  "teaching": "Teaching assistant for “Microcontroller Fundamentals” and “Electronic Design Training” across three semesters.",
   "site_title": "Yuxin Xie · Academic Homepage",
   "description": "Yuxin Xie — analog compute-in-memory, hardware-aware machine learning, publications, and electronic engineering projects.",
   "publications": [
     {
       "venue": "DATE 2027",
       "status": "Under review",
-      "authorship": "First author",
       "title": "CNKD · Noise-robust and data-efficient knowledge distillation for vision transformers",
       "summary": "Clean-to-noisy knowledge distillation and the trade-off between robust accuracy and training data access.",
       "paper_url": "",
@@ -60,7 +58,6 @@
     {
       "venue": "ICSICT 2026",
       "status": "Accepted · Forthcoming",
-      "authorship": "Second author · 2/7",
       "title": "RBGR: Backward-Only Residual Gradient Reweighting for Robust Analog CIM Inference",
       "summary": "Backward-only gradient reweighting for residual networks under analog CIM non-idealities.",
       "paper_url": "",
@@ -69,7 +66,6 @@
     {
       "venue": "ICCD 2026",
       "status": "Accepted · Forthcoming",
-      "authorship": "Third author · 3/7",
       "title": "INFER: Implicit Neural Framework for Efficient Representation of Noise in Analog CIM",
       "summary": "Implicit neural representations of noise in analog compute-in-memory.",
       "paper_url": "",
@@ -78,7 +74,6 @@
     {
       "venue": "ASP-DAC 2027",
       "status": "Accepted · Forthcoming",
-      "authorship": "Fourth author · 4/7",
       "title": "ASSERT: Adaptive Stochastic Sampling for Robust Diffusion Models on Analog Compute-in-Memory Hardware",
       "summary": "Adaptive stochastic sampling for diffusion models on analog CIM hardware.",
       "paper_url": "",
@@ -87,7 +82,6 @@
     {
       "venue": "DAC 2027",
       "status": "Accepted · Forthcoming",
-      "authorship": "Sixth author · 6/9",
       "title": "IGNITE: An Inquisitive and Graph-Aware Neural CircuitSimulator with Two-Stage Enhanced In-Context Learning",
       "summary": "Graph-aware neural circuit simulation with two-stage enhanced in-context learning.",
       "paper_url": "",
@@ -96,11 +90,34 @@
     {
       "venue": "ISEDA 2027",
       "status": "Accepted · Forthcoming",
-      "authorship": "Ninth author · 9/9",
       "title": "Toward Reliable Analog In-Memory Computing: Co-Design of Hardware-Aware Input Processing and Accuracy-Optimized Weight Mapping",
       "summary": "Co-design of hardware-aware input processing and accuracy-oriented weight mapping.",
       "paper_url": "",
       "paper_state": "forthcoming"
+    },
+    {
+      "title": "Multimodal sensor fusion-based lightweight pedestrian wearable system for continuous health monitoring and location tracking",
+      "venue": "IEEE Sensors Journal · 2025",
+      "paper_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=fXpNMakAAAAJ&citation_for_view=fXpNMakAAAAJ:d1gkVwhDpl0C",
+      "status": "Published",
+      "paper_state": "published",
+      "summary": "A lightweight multimodal wearable system for continuous health monitoring and location tracking."
+    },
+    {
+      "title": "A multimodal CNN–transformer network for gait pattern recognition with wearable sensors in weak GNSS scenarios",
+      "venue": "Electronics 14(8), 1537 · 2025",
+      "paper_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=fXpNMakAAAAJ&citation_for_view=fXpNMakAAAAJ:u-x6o8ySG0sC",
+      "status": "Published",
+      "paper_state": "published",
+      "summary": "Multimodal CNN–Transformer gait recognition using wearable sensors in weak GNSS scenarios."
+    },
+    {
+      "title": "Multimodal spatiotemporal feature-based human motion pattern recognition with CNN-transformer-attention framework",
+      "venue": "IEEE Internet of Things Journal",
+      "paper_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=fXpNMakAAAAJ&citation_for_view=fXpNMakAAAAJ:u5HHmVD_uO8C",
+      "status": "Published",
+      "paper_state": "published",
+      "summary": "Human motion pattern recognition using multimodal spatiotemporal features and a CNN–Transformer–Attention framework."
     }
   ],
   "research": [
@@ -192,40 +209,104 @@
   ],
   "awards": [
     {
-      "name": "National Undergraduate Electronic Design Contest",
-      "award": "National Second Prize · Beijing First Prize"
+      "date": "",
+      "name": "Outstanding Graduate, Beihang University",
+      "award": "Honor"
     },
     {
+      "date": "2025.08",
+      "name": "China International College Students’ Innovation Competition — Beijing, Main Track",
+      "award": "First Prize"
+    },
+    {
+      "date": "2025.08",
+      "name": "Beijing College Students’ Innovation and Entrepreneurship Competition",
+      "award": "First Prize"
+    },
+    {
+      "date": "2025.08",
+      "name": "National Undergraduate Electronic Design Contest",
+      "award": "National Second Prize"
+    },
+    {
+      "date": "2025.06",
+      "name": "Beihang Feng Ru Cup — Main Track, Paper Category",
+      "award": "First Prize · Second Prize"
+    },
+    {
+      "date": "2025.06",
+      "name": "Beihang Electronic Innovation Competition",
+      "award": "First Prize · Second Prize"
+    },
+    {
+      "date": "2025.06",
       "name": "Beijing Integrated Circuit Design Competition",
       "award": "Second Prize"
     },
     {
-      "name": "Beihang Feng Ru Cup",
-      "award": "1 First Prize · 2 Second Prizes"
+      "date": "2025.05",
+      "name": "Capital Challenge Cup — Special Track",
+      "award": "Grand Prize · First Prize"
     },
     {
-      "name": "China International College Students’ Innovation Competition",
-      "award": "First Prize"
+      "date": "2025.05",
+      "name": "National Electronics Design and Skills Competition — Lanqiao Cup, Provincial Round",
+      "award": "Third Prize"
     },
     {
-      "name": "Capital Challenge Cup",
-      "award": "2 First Prizes"
+      "date": "2025.05",
+      "name": "Datang Cup National Undergraduate Mobile Communications 5G Competition — Provincial Round",
+      "award": "Third Prize"
     },
     {
-      "name": "National Undergraduate Mathematics Competition",
-      "award": "Second Prize"
+      "date": "2024.12",
+      "name": "National Undergraduate Mathematics Competition — Preliminary Round",
+      "award": "Third Prize"
     },
     {
+      "date": "2025",
+      "name": "CETC Ceyear Scholarship",
+      "award": "Recipient"
+    },
+    {
+      "date": "",
       "name": "Beihang Academic Competition Scholarship",
       "award": "Grand Prize"
     },
     {
+      "date": "",
       "name": "Beihang Academic Excellence Scholarship",
       "award": "First Prize"
     },
     {
+      "date": "",
       "name": "Beihang Social Work Excellence Scholarship",
       "award": "Second Prize"
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "degree": "Master’s student",
+      "date": "Present"
+    },
+    {
+      "institution": "Beihang University",
+      "degree": "B.Eng. in Electronic Information Engineering",
+      "date": "2022.09 — 2026.06"
+    }
+  ],
+  "published": "Published",
+  "experience_title": "Experience",
+  "experience_subtitle": "Volunteering & community service",
+  "experience": [
+    {
+      "date": "2024.07 — 2024.08",
+      "title": "Volunteer teaching",
+      "organization": "Zhijin No. 4 Primary School, Bijie, Guizhou, China",
+      "description": "Participated in summer volunteer teaching at Zhijin No. 4 Primary School.",
+      "url": "https://mp.weixin.qq.com/s/-MsElxI2pnd-l-t7qsdIYw",
+      "link_label": "Read the story ↗"
     }
   ]
 }

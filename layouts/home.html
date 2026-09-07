@@ -11,14 +11,14 @@
       <div class="portrait-frame"><img class="personal-portrait" src="{{ "images/personal_page.jpg" | relURL }}" alt="Yuxin Xie" width="1920" height="1280"></div>
       <h1>{{ $d.name }}</h1><p class="roman-name">{{ $d.alternate }}</p>
       <p class="affiliation">{{ $d.university }}<br>{{ $d.degree }}</p>
-      <a class="email" href="mailto:22373062@buaa.edu.cn">22373062@buaa.edu.cn</a>
+      <a class="email" href="mailto:yuxin_xie@buaa.edu.cn">yuxin_xie@buaa.edu.cn</a>
       <div class="profile-links"><a href="https://github.com/singledog957">GitHub ↗</a><a href="https://www.singledog233.top">{{ $d.blog }} ↗</a></div>
     </div>
     <div class="biography">
       <p class="eyebrow">COMPUTE-IN-MEMORY & HARDWARE-AWARE ML</p>
       <h2>{{ $d.heading }}</h2>
       {{ range $d.bio }}<p>{{ . }}</p>{{ end }}
-      <div class="academic-basics"><div><h3>{{ $d.interest_title }}</h3><ul>{{ range $d.interests }}<li>{{ . }}</li>{{ end }}</ul></div><div><h3>{{ $d.education_title }}</h3><p><b>{{ $d.university }}</b><br>{{ $d.degree }}<br><span class="muted">2022.09 — 2026.06</span></p><p class="education-note">{{ $d.education_note }}</p></div></div>
+      <div class="academic-basics"><div><h3>{{ $d.interest_title }}</h3><ul>{{ range $d.interests }}<li>{{ . }}</li>{{ end }}</ul></div><div><h3>{{ $d.education_title }}</h3>{{ range $d.education }}<p class="education-entry">{{ with .institution }}<b>{{ . }}</b><br>{{ end }}{{ .degree }}{{ with .date }}<br><span class="muted">{{ . }}</span>{{ end }}</p>{{ end }}<p class="education-note">{{ $d.education_note }}</p></div></div>
       <a class="text-link" href="#research">{{ $d.view_research }} <span>↓</span></a>
     </div>
   </section>
@@ -26,7 +26,7 @@
     <div class="section-label"><span>01 / PUBLICATIONS</span><h2>{{ $d.papers_title }}</h2><p>{{ $d.papers_subtitle }}</p></div>
     <div class="section-content"><div class="paper-list">
       {{ range $d.publications }}
-      <article class="paper"><div class="paper-meta"><span class="venue">{{ .venue }}</span><span>{{ .status }}</span><span>{{ .authorship }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p>{{ partial "paper-link.html" (dict "item" . "labels" $d) }}</article>
+      <article class="paper"><div class="paper-meta"><span class="venue">{{ .venue }}</span><span>{{ .status }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p>{{ partial "paper-link.html" (dict "item" . "labels" $d) }}</article>
       {{ end }}
     </div></div>
   </section>
@@ -48,7 +48,11 @@
   </section>
   <section id="awards" class="section wrap">
     <div class="section-label"><span>05 / RECOGNITION</span><h2>{{ $d.awards_title }}</h2></div>
-    <div class="section-content"><ul class="awards">{{ range $d.awards }}<li><span>{{ .name }}</span><b>{{ .award }}</b></li>{{ end }}</ul><div class="teaching"><h3>{{ $d.teaching_title }}</h3><p>{{ $d.teaching }}</p></div></div>
+    <div class="section-content"><ul class="awards">{{ range $d.awards }}<li><time class="award-date">{{ .date }}</time><span>{{ .name }}</span><b>{{ .award }}</b></li>{{ end }}</ul></div>
+  </section>
+  <section id="experience" class="section wrap">
+    <div class="section-label"><span>06 / EXPERIENCE</span><h2>{{ $d.experience_title }}</h2><p>{{ $d.experience_subtitle }}</p></div>
+    <div class="section-content">{{ range $d.experience }}<article class="experience-item"><time>{{ .date }}</time><h3>{{ .title }}</h3><p class="experience-organization">{{ .organization }}</p><p>{{ .description }}</p><a class="text-link small" href="{{ .url }}">{{ .link_label }}</a></article>{{ end }}</div>
   </section>
 </main>
 {{ partial "academic-footer.html" . }}
