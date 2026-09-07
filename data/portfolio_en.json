@@ -12,10 +12,10 @@
     "Projects",
     "Experience"
   ],
-  "heading": "Robust machine learning for analog computing",
+  "heading": "Machine learning for analog computing",
   "bio": [
     "My research focuses on noise and non-idealities in analog compute-in-memory (CIM). I study hardware-aware training, knowledge distillation, and error modeling to improve the robustness of neural network inference.",
-    "I am currently a master’s student and received my undergraduate education in Electronic Information Engineering at Beihang University. Alongside research, I work on embedded systems, electronic design, and software projects."
+    "I am currently a master’s student at the School of Integrated Circuit Science and Engineering, Beihang University, where I also received my undergraduate education in Electronic Information Engineering. Alongside research, I work on embedded systems, electronic design, and software projects."
   ],
   "interest_title": "Research interests",
   "interests": [
@@ -24,7 +24,7 @@
     "Efficient calibration and compensation"
   ],
   "education_title": "Education",
-  "education_note": "Rank: 2/33 · CET-6: 639",
+  "education_note": "Rank: 2/33 · CET-6: 639 · Outstanding Graduate of Beihang University",
   "view_research": "Explore research",
   "papers_title": "Publications",
   "papers_subtitle": "Published, accepted, and submitted work",
@@ -326,8 +326,8 @@
   ],
   "education": [
     {
-      "institution": "",
-      "degree": "Master’s student",
+      "institution": "Beihang University",
+      "degree": "Master’s student · School of Integrated Circuit Science and Engineering",
       "date": "Present"
     },
     {
