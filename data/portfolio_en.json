@@ -12,16 +12,17 @@
     "Projects",
     "Experience"
   ],
-  "heading": "Machine learning for analog computing",
+  "heading": "Compute-in-memory acceleration for machine learning",
   "bio": [
-    "My research focuses on noise and non-idealities in analog compute-in-memory (CIM). I study hardware-aware training, knowledge distillation, and error modeling to improve the robustness of neural network inference.",
+    "My research focuses on noise and non-idealities in **analog compute-in-memory (CIM)**. I study **hardware-aware training**, knowledge distillation, and error modeling to improve the robustness of neural network inference.",
     "I am currently a master’s student at the School of Integrated Circuit Science and Engineering, Beihang University, where I also received my undergraduate education in Electronic Information Engineering. Alongside research, I work on embedded systems, electronic design, and software projects."
   ],
   "interest_title": "Research interests",
   "interests": [
     "Analog CIM non-ideality modeling",
     "Noise-aware training and distillation",
-    "Efficient calibration and compensation"
+    "Efficient calibration and compensation",
+    "Efficient LLM inference and CIM acceleration"
   ],
   "education_title": "Education",
   "education_note": "Rank: 2/33 · CET-6: 639 · Outstanding Graduate of Beihang University",
@@ -34,7 +35,7 @@
   "engineering_subtitle": "Electronic design and implementation",
   "projects_title": "Other projects",
   "projects_subtitle": "Software beyond my research",
-  "awards_title": "Honors & awards",
+  "awards_title": "Selected honors & awards",
   "result_label": "Selected result",
   "code": "Code",
   "paper": "Paper",
@@ -210,8 +211,21 @@
   "awards": [
     {
       "date": "2025.08",
+      "name": "National Undergraduate Electronic Design Contest",
+      "award": "National Second Prize",
+      "featured": true
+    },
+    {
+      "date": "2025.05",
+      "name": "Capital Challenge Cup — Special Track",
+      "award": "Grand Prize · First Prize",
+      "featured": true
+    },
+    {
+      "date": "2025.08",
       "name": "China International College Students’ Innovation Competition — Beijing, Main Track",
-      "award": "First Prize"
+      "award": "First Prize",
+      "featured": true
     },
     {
       "date": "2025.08",
@@ -219,9 +233,9 @@
       "award": "First Prize"
     },
     {
-      "date": "2025.08",
-      "name": "National Undergraduate Electronic Design Contest",
-      "award": "National Second Prize"
+      "date": "2025.06",
+      "name": "Beijing Integrated Circuit Design Competition",
+      "award": "Second Prize"
     },
     {
       "date": "2025.06",
@@ -234,36 +248,6 @@
       "award": "First Prize · Second Prize"
     },
     {
-      "date": "2025.06",
-      "name": "Beijing Integrated Circuit Design Competition",
-      "award": "Second Prize"
-    },
-    {
-      "date": "2025.05",
-      "name": "Capital Challenge Cup — Special Track",
-      "award": "Grand Prize · First Prize"
-    },
-    {
-      "date": "2025.05",
-      "name": "National Electronics Design and Skills Competition — Lanqiao Cup, Provincial Round",
-      "award": "Third Prize"
-    },
-    {
-      "date": "2025.05",
-      "name": "Datang Cup National Undergraduate Mobile Communications 5G Competition — Provincial Round",
-      "award": "Third Prize"
-    },
-    {
-      "date": "2025",
-      "name": "CETC Ceyear Scholarship",
-      "award": "Recipient"
-    },
-    {
-      "date": "2024.12",
-      "name": "National Undergraduate Mathematics Competition — Preliminary Round",
-      "award": "Third Prize"
-    },
-    {
       "date": "2024.08",
       "name": "National Undergraduate Electronic Design Contest — Beijing",
       "award": "First Prize"
@@ -274,29 +258,9 @@
       "award": "Second Prize"
     },
     {
-      "date": "2024.05",
-      "name": "National Electronics Design and Skills Competition — Lanqiao Cup, Provincial Round",
-      "award": "Third Prize"
-    },
-    {
-      "date": "2024.03",
-      "name": "Beihang Feng Ru Cup — Main Track, Paper Category",
-      "award": "Third Prize"
-    },
-    {
-      "date": "2024.01",
-      "name": "Winter Social Practice",
-      "award": "University-level Third Prize"
-    },
-    {
       "date": "2023.12",
       "name": "National Undergraduate Mathematics Competition — Preliminary Round",
       "award": "Second Prize"
-    },
-    {
-      "date": "2022.09–2023.09",
-      "name": "Innovation and Entrepreneurship Center, Shi E College",
-      "award": "Outstanding Student Leader"
     },
     {
       "date": "",
@@ -314,14 +278,9 @@
       "award": "First Prize"
     },
     {
-      "date": "",
-      "name": "Beihang Social Work Excellence Scholarship",
-      "award": "Second Prize"
-    },
-    {
-      "date": "",
-      "name": "Beijing Volunteer Star Rating",
-      "award": "One-star Volunteer"
+      "date": "2025",
+      "name": "CETC Ceyear Scholarship",
+      "award": "Recipient"
     }
   ],
   "education": [
@@ -338,8 +297,14 @@
   ],
   "published": "Published",
   "experience_title": "Experience",
-  "experience_subtitle": "Volunteering, student leadership & service",
+  "experience_subtitle": "Teaching assistance & volunteer teaching",
   "experience": [
+    {
+      "date": "2023.09 — 2025.01",
+      "title": "Teaching assistant",
+      "organization": "Beihang University",
+      "description": "Served as a teaching assistant for “Fundamentals of Microcontrollers” and “Basic Training in Electronic Design” over three semesters."
+    },
     {
       "date": "2024.07 — 2024.08",
       "title": "Volunteer teaching",
@@ -347,18 +312,6 @@
       "description": "Participated in summer volunteer teaching at Zhijin No. 4 Primary School.",
       "url": "https://mp.weixin.qq.com/s/-MsElxI2pnd-l-t7qsdIYw",
       "link_label": "Read the story ↗"
-    },
-    {
-      "date": "2023.09 — 2024.09",
-      "title": "Head of Publicity",
-      "organization": "Innovation and Entrepreneurship Center, Shi E College",
-      "description": "Served as head of publicity for the college’s Innovation and Entrepreneurship Center."
-    },
-    {
-      "date": "2022.09 — 2024.09",
-      "title": "Class representative roles",
-      "organization": "Beihang University",
-      "description": "2022.09–2023.09: welfare and safety representative for Class 227312. 2023.09–2024.09: welfare representative for Class 220231."
     }
   ]
 }

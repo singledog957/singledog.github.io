@@ -17,7 +17,7 @@
     <div class="biography">
       <p class="eyebrow">COMPUTE-IN-MEMORY & HARDWARE-AWARE ML</p>
       <h2>{{ $d.heading }}</h2>
-      {{ range $d.bio }}<p>{{ . }}</p>{{ end }}
+      {{ range $d.bio }}<p>{{ . | markdownify }}</p>{{ end }}
       <div class="academic-basics"><div><h3>{{ $d.interest_title }}</h3><ul>{{ range $d.interests }}<li>{{ . }}</li>{{ end }}</ul></div><div><h3>{{ $d.education_title }}</h3>{{ range $d.education }}<p class="education-entry">{{ with .institution }}<b>{{ . }}</b><br>{{ end }}{{ .degree }}{{ with .date }}<br><span class="muted">{{ . }}</span>{{ end }}</p>{{ end }}<p class="education-note">{{ $d.education_note }}</p></div></div>
       <a class="text-link" href="#research">{{ $d.view_research }} <span>↓</span></a>
     </div>
@@ -48,7 +48,7 @@
   </section>
   <section id="awards" class="section wrap">
     <div class="section-label"><span>05 / RECOGNITION</span><h2>{{ $d.awards_title }}</h2></div>
-    <div class="section-content"><ul class="awards">{{ range $d.awards }}<li><time class="award-date">{{ .date }}</time><span>{{ .name }}</span><b>{{ .award }}</b></li>{{ end }}</ul></div>
+    <div class="section-content"><ul class="awards">{{ range $d.awards }}<li{{ if .featured }} class="award-featured"{{ end }}><time class="award-date">{{ .date }}</time><span>{{ .name }}</span><b>{{ .award }}</b></li>{{ end }}</ul></div>
   </section>
   <section id="experience" class="section wrap">
     <div class="section-label"><span>06 / EXPERIENCE</span><h2>{{ $d.experience_title }}</h2><p>{{ $d.experience_subtitle }}</p></div>
