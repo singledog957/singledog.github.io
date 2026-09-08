@@ -96,6 +96,26 @@
   ],
   "demos": [
     {
+      "description": "面向课程学习的辅助工具，累计访问超过 110k，GitHub 获得 21 Stars。",
+      "logo": "https://duaa.singledog233.top/logo.svg",
+      "url": "https://duaa.singledog233.top",
+      "link_label": "访问网站 ↗",
+      "repo": "https://github.com/singledog957/duaa",
+      "metrics": [
+        {
+          "value": "110k+",
+          "label": "访问量"
+        },
+        {
+          "value": "21",
+          "label": "GitHub Stars"
+        }
+      ],
+      "name": "DUAA · 课程辅助工具",
+      "domain": "duaa.singledog233.top",
+      "featured": true
+    },
+    {
       "name": "Health Lens",
       "url": "https://demo-ha.singledog233.top",
       "domain": "demo-ha.singledog233.top",
@@ -215,11 +235,11 @@
   "view_research": "查看研究项目",
   "papers_title": "论文",
   "papers_subtitle": "已发表、已录用与在投工作",
-  "research_title": "研究项目",
+  "research_title": "研究",
   "research_subtitle": "存算算法探索与竞赛实践",
   "engineering_title": "工程实践",
   "engineering_subtitle": "电子设计与系统实现",
-  "projects_title": "其他作品",
+  "projects_title": "项目",
   "projects_subtitle": "研究之外的开发实践",
   "awards_title": "代表荣誉与奖励",
   "result_label": "代表结果",
@@ -271,27 +291,8 @@
   ],
   "published": "已发表",
   "experience_title": "经历",
-  "experience_subtitle": "产品实践、课程助教与暑期支教",
+  "experience_subtitle": "课程助教与暑期支教",
   "experience": [
-    {
-      "title": "DUAA · 课程辅助工具",
-      "organization": "duaa.singledog233.top",
-      "description": "面向课程学习的辅助工具，累计访问超过 110k，GitHub 获得 21 Stars。",
-      "logo": "https://duaa.singledog233.top/logo.svg",
-      "url": "https://duaa.singledog233.top",
-      "link_label": "访问网站 ↗",
-      "repo": "https://github.com/singledog957/duaa",
-      "metrics": [
-        {
-          "value": "110k+",
-          "label": "访问量"
-        },
-        {
-          "value": "21",
-          "label": "GitHub Stars"
-        }
-      ]
-    },
     {
       "date": "2023.09 — 2025.01",
       "title": "课程助教",

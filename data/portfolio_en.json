@@ -29,11 +29,11 @@
   "view_research": "Explore research",
   "papers_title": "Publications",
   "papers_subtitle": "Published, accepted, and submitted work",
-  "research_title": "Research Projects",
+  "research_title": "Research",
   "research_subtitle": "CIM algorithms & competition projects",
   "engineering_title": "Engineering",
   "engineering_subtitle": "Electronic design and implementation",
-  "projects_title": "Other projects",
+  "projects_title": "Projects",
   "projects_subtitle": "Software beyond my research",
   "awards_title": "Selected honors & awards",
   "result_label": "Selected result",
@@ -168,6 +168,26 @@
   ],
   "demos": [
     {
+      "description": "A course assistance tool with over 110k visits and 21 GitHub stars.",
+      "logo": "https://duaa.singledog233.top/logo.svg",
+      "url": "https://duaa.singledog233.top",
+      "link_label": "Visit website ↗",
+      "repo": "https://github.com/singledog957/duaa",
+      "metrics": [
+        {
+          "value": "110k+",
+          "label": "Visits"
+        },
+        {
+          "value": "21",
+          "label": "GitHub Stars"
+        }
+      ],
+      "name": "DUAA · Course assistance tool",
+      "domain": "duaa.singledog233.top",
+      "featured": true
+    },
+    {
       "name": "Health Lens",
       "url": "https://demo-ha.singledog233.top",
       "domain": "demo-ha.singledog233.top",
@@ -271,27 +291,8 @@
   ],
   "published": "Published",
   "experience_title": "Experience",
-  "experience_subtitle": "Products, teaching assistance & volunteer teaching",
+  "experience_subtitle": "Teaching assistance & volunteer teaching",
   "experience": [
-    {
-      "title": "DUAA · Course assistance tool",
-      "organization": "duaa.singledog233.top",
-      "description": "A course assistance tool with over 110k visits and 21 GitHub stars.",
-      "logo": "https://duaa.singledog233.top/logo.svg",
-      "url": "https://duaa.singledog233.top",
-      "link_label": "Visit website ↗",
-      "repo": "https://github.com/singledog957/duaa",
-      "metrics": [
-        {
-          "value": "110k+",
-          "label": "Visits"
-        },
-        {
-          "value": "21",
-          "label": "GitHub Stars"
-        }
-      ]
-    },
     {
       "date": "2023.09 — 2025.01",
       "title": "Teaching assistant",
