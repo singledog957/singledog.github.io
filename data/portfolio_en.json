@@ -196,16 +196,18 @@
   ],
   "demos": [
     {
-      "name": "HealthVista",
+      "name": "Health Lens",
       "url": "https://demo-ha.singledog233.top",
       "domain": "demo-ha.singledog233.top",
-      "description": "Collects medical records, extracts and deduplicates indicators with OCR, tracks long-term health trends, and uses LLMs to provide health analysis and guidance."
+      "description": "Collects medical records, extracts and deduplicates indicators with OCR, tracks long-term health trends, and uses LLMs to provide health analysis and guidance.",
+      "logo": "https://demo-ha.singledog233.top/health-lens.svg"
     },
     {
       "name": "Super",
       "url": "https://demo-super.singledog233.top",
       "domain": "demo-super.singledog233.top",
-      "description": "An internal Agent debugging platform extensively customized from Mastra for business-specific workflows and agent development."
+      "description": "An internal Agent debugging platform extensively customized from Mastra for business-specific workflows and agent development.",
+      "logo": "https://demo-super.singledog233.top/assets/logo-DWBEkCKr.png"
     }
   ],
   "awards": [
@@ -297,8 +299,27 @@
   ],
   "published": "Published",
   "experience_title": "Experience",
-  "experience_subtitle": "Teaching assistance & volunteer teaching",
+  "experience_subtitle": "Products, teaching assistance & volunteer teaching",
   "experience": [
+    {
+      "title": "DUAA · Course assistance tool",
+      "organization": "duaa.singledog233.top",
+      "description": "A course assistance tool with over 110k visits and 21 GitHub stars.",
+      "logo": "https://duaa.singledog233.top/logo.svg",
+      "url": "https://duaa.singledog233.top",
+      "link_label": "Visit website ↗",
+      "repo": "https://github.com/singledog957/duaa",
+      "metrics": [
+        {
+          "value": "110k+",
+          "label": "Visits"
+        },
+        {
+          "value": "21",
+          "label": "GitHub Stars"
+        }
+      ]
+    },
     {
       "date": "2023.09 — 2025.01",
       "title": "Teaching assistant",
@@ -313,5 +334,8 @@
       "url": "https://mp.weixin.qq.com/s/-MsElxI2pnd-l-t7qsdIYw",
       "link_label": "Read the story ↗"
     }
-  ]
+  ],
+  "expand_papers": "Show all publications",
+  "expand_research": "Show all research",
+  "collapse": "Show less"
 }

@@ -96,16 +96,18 @@
   ],
   "demos": [
     {
-      "name": "健康视界",
+      "name": "Health Lens",
       "url": "https://demo-ha.singledog233.top",
       "domain": "demo-ha.singledog233.top",
-      "description": "汇集病历、识别并整理健康指标，持续追踪变化，结合大模型提供健康分析与建议。"
+      "description": "汇集病历、识别并整理健康指标，持续追踪变化，结合大模型提供健康分析与建议。",
+      "logo": "https://demo-ha.singledog233.top/health-lens.svg"
     },
     {
       "name": "Super",
       "url": "https://demo-super.singledog233.top",
       "domain": "demo-super.singledog233.top",
-      "description": "基于 Mastra 深度定制的内部 Agent 调试平台，支持业务场景适配与智能体开发调试。"
+      "description": "基于 Mastra 深度定制的内部 Agent 调试平台，支持业务场景适配与智能体开发调试。",
+      "logo": "https://demo-super.singledog233.top/assets/logo-DWBEkCKr.png"
     }
   ],
   "awards": [
@@ -297,8 +299,27 @@
   ],
   "published": "已发表",
   "experience_title": "经历",
-  "experience_subtitle": "课程助教与暑期支教",
+  "experience_subtitle": "产品实践、课程助教与暑期支教",
   "experience": [
+    {
+      "title": "DUAA · 课程辅助工具",
+      "organization": "duaa.singledog233.top",
+      "description": "面向课程学习的辅助工具，累计访问超过 110k，GitHub 获得 21 Stars。",
+      "logo": "https://duaa.singledog233.top/logo.svg",
+      "url": "https://duaa.singledog233.top",
+      "link_label": "访问网站 ↗",
+      "repo": "https://github.com/singledog957/duaa",
+      "metrics": [
+        {
+          "value": "110k+",
+          "label": "访问量"
+        },
+        {
+          "value": "21",
+          "label": "GitHub Stars"
+        }
+      ]
+    },
     {
       "date": "2023.09 — 2025.01",
       "title": "课程助教",
@@ -313,5 +334,8 @@
       "url": "https://mp.weixin.qq.com/s/-MsElxI2pnd-l-t7qsdIYw",
       "link_label": "支教纪实 ↗"
     }
-  ]
+  ],
+  "expand_papers": "展开全部论文",
+  "expand_research": "展开全部研究",
+  "collapse": "收起"
 }

@@ -1,0 +1,3 @@
+{{ $d := .labels }}{{ with .item }}
+<article class="research-item"><div class="research-top"><span class="project-id">{{ .short }}</span><span class="muted">{{ .category }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p><div class="result"><span>{{ $d.result_label }}</span>{{ .result }}</div><div class="project-actions">{{ partial "paper-link.html" (dict "item" . "labels" $d) }}{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ partial "github-icon.html" . }} {{ $d.code }} ↗</a>{{ end }}</div></article>
+{{ end }}

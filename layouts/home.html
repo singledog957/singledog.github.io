@@ -12,7 +12,7 @@
       <h1>{{ $d.name }}</h1><p class="roman-name">{{ $d.alternate }}</p>
       <p class="affiliation">{{ $d.university }}<br>{{ $d.degree }}</p>
       <a class="email" href="mailto:yuxin_xie@buaa.edu.cn">yuxin_xie@buaa.edu.cn</a>
-      <div class="profile-links"><a href="https://github.com/singledog957">GitHub ↗</a><a href="https://www.singledog233.top">{{ $d.blog }} ↗</a></div>
+      <div class="profile-links"><a href="https://github.com/singledog957">{{ partial "github-icon.html" . }} GitHub ↗</a><a href="https://www.singledog233.top">{{ $d.blog }} ↗</a></div>
     </div>
     <div class="biography">
       <p class="eyebrow">COMPUTE-IN-MEMORY & HARDWARE-AWARE ML</p>
@@ -25,26 +25,24 @@
   <section id="publications" class="section wrap">
     <div class="section-label"><span>01 / PUBLICATIONS</span><h2>{{ $d.papers_title }}</h2><p>{{ $d.papers_subtitle }}</p></div>
     <div class="section-content"><div class="paper-list">
-      {{ range $d.publications }}
-      <article class="paper"><div class="paper-meta"><span class="venue">{{ .venue }}</span><span>{{ .status }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p>{{ partial "paper-link.html" (dict "item" . "labels" $d) }}</article>
-      {{ end }}
+      {{ range first 3 $d.publications }}{{ partial "publication-item.html" (dict "item" . "labels" $d) }}{{ end }}
+      {{ if gt (len $d.publications) 3 }}<details class="expand-list"><summary><span class="expand-label">{{ $d.expand_papers }} <span class="expand-count">{{ len $d.publications }}</span></span><span class="collapse-label">{{ $d.collapse }}</span><span class="expand-chevron" aria-hidden="true">⌄</span></summary><div class="expanded-items">{{ range after 3 $d.publications }}{{ partial "publication-item.html" (dict "item" . "labels" $d) }}{{ end }}</div></details>{{ end }}
     </div></div>
   </section>
   <section id="research" class="section wrap">
     <div class="section-label"><span>02 / RESEARCH</span><h2>{{ $d.research_title }}</h2><p>{{ $d.research_subtitle }}</p></div>
     <div class="section-content research-list">
-      {{ range $d.research }}
-      <article class="research-item"><div class="research-top"><span class="project-id">{{ .short }}</span><span class="muted">{{ .category }}</span></div><h3>{{ .title }}</h3><p>{{ .summary }}</p><div class="result"><span>{{ $d.result_label }}</span>{{ .result }}</div><div class="project-actions">{{ partial "paper-link.html" (dict "item" . "labels" $d) }}{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ $d.code }} ↗</a>{{ end }}</div></article>
-      {{ end }}
+      {{ range first 3 $d.research }}{{ partial "research-item.html" (dict "item" . "labels" $d) }}{{ end }}
+      {{ if gt (len $d.research) 3 }}<details class="expand-list"><summary><span class="expand-label">{{ $d.expand_research }} <span class="expand-count">{{ len $d.research }}</span></span><span class="collapse-label">{{ $d.collapse }}</span><span class="expand-chevron" aria-hidden="true">⌄</span></summary><div class="expanded-items">{{ range after 3 $d.research }}{{ partial "research-item.html" (dict "item" . "labels" $d) }}{{ end }}</div></details>{{ end }}
     </div>
   </section>
   <section id="engineering" class="section wrap">
     <div class="section-label"><span>03 / ENGINEERING</span><h2>{{ $d.engineering_title }}</h2><p>{{ $d.engineering_subtitle }}</p></div>
-    <div class="section-content">{{ range $d.engineering }}<article class="engineering-item"><div class="engineering-date">{{ .date }}</div><div><h3>{{ .title }}</h3><p>{{ .description }}</p><p class="achievement">{{ .result }}</p>{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ $d.code }} ↗</a>{{ end }}</div></article>{{ end }}</div>
+    <div class="section-content">{{ range $d.engineering }}<article class="engineering-item"><div class="engineering-date">{{ .date }}</div><div><h3>{{ .title }}</h3><p>{{ .description }}</p><p class="achievement">{{ .result }}</p>{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ partial "github-icon.html" . }} {{ $d.code }} ↗</a>{{ end }}</div></article>{{ end }}</div>
   </section>
   <section id="projects" class="section wrap">
     <div class="section-label"><span>04 / EXPLORATIONS</span><h2>{{ $d.projects_title }}</h2><p>{{ $d.projects_subtitle }}</p></div>
-    <div class="section-content"><div class="demo-grid">{{ range $d.demos }}<a class="demo" href="{{ .url }}"><span class="demo-label">LIVE DEMO <span>↗</span></span><h3>{{ .name }}</h3><p>{{ .description }}</p><span class="demo-domain">{{ .domain }}</span></a>{{ end }}</div><a class="blog-link" href="https://www.singledog233.top"><div><span class="eyebrow">NOTES & WRITING</span><h3>{{ $d.blog_title }}</h3><p>{{ $d.blog_description }}</p></div><span aria-hidden="true">↗</span></a></div>
+    <div class="section-content"><div class="demo-grid">{{ range $d.demos }}<a class="demo" href="{{ .url }}"><span class="demo-label">LIVE DEMO <span>↗</span></span><h3 class="demo-title">{{ with .logo }}<img class="demo-logo" src="{{ . }}" alt="" loading="lazy">{{ end }}{{ .name }}</h3><p>{{ .description }}</p><span class="demo-domain">{{ .domain }}</span></a>{{ end }}</div><a class="blog-link" href="https://www.singledog233.top"><div><span class="eyebrow">NOTES & WRITING</span><h3>{{ $d.blog_title }}</h3><p>{{ $d.blog_description }}</p></div><span aria-hidden="true">↗</span></a></div>
   </section>
   <section id="awards" class="section wrap">
     <div class="section-label"><span>05 / RECOGNITION</span><h2>{{ $d.awards_title }}</h2></div>
@@ -52,7 +50,7 @@
   </section>
   <section id="experience" class="section wrap">
     <div class="section-label"><span>06 / EXPERIENCE</span><h2>{{ $d.experience_title }}</h2><p>{{ $d.experience_subtitle }}</p></div>
-    <div class="section-content">{{ range $d.experience }}<article class="experience-item"><time>{{ .date }}</time><h3>{{ .title }}</h3><p class="experience-organization">{{ .organization }}</p><p>{{ .description }}</p>{{ if .url }}<a class="text-link small" href="{{ .url }}">{{ .link_label }}</a>{{ end }}</article>{{ end }}</div>
+    <div class="section-content">{{ range $d.experience }}<article class="experience-item">{{ with .date }}<time>{{ . }}</time>{{ end }}<h3 class="experience-title">{{ with .logo }}<img class="experience-logo" src="{{ . }}" alt="" loading="lazy">{{ end }}{{ .title }}</h3><p class="experience-organization">{{ .organization }}</p><p>{{ .description }}</p>{{ with .metrics }}<div class="project-metrics">{{ range . }}<div><strong>{{ .value }}</strong><span>{{ .label }}</span></div>{{ end }}</div>{{ end }}<div class="project-actions">{{ if .url }}<a class="text-link small" href="{{ .url }}">{{ .link_label }}</a>{{ end }}{{ with .repo }}<a class="text-link small" href="{{ . }}">{{ partial "github-icon.html" . }} GitHub ↗</a>{{ end }}</div></article>{{ end }}</div>
   </section>
 </main>
 {{ partial "academic-footer.html" . }}
