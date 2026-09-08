@@ -14,8 +14,8 @@
   ],
   "heading": "Compute-in-memory acceleration for machine learning",
   "bio": [
-    "My research focuses on noise and non-idealities in **analog compute-in-memory (CIM)**. I study **hardware-aware training**, knowledge distillation, and error modeling to improve the robustness of neural network inference.",
-    "I am currently a master’s student at the School of Integrated Circuit Science and Engineering, Beihang University, where I also received my undergraduate education in Electronic Information Engineering. Alongside research, I work on embedded systems, electronic design, and software projects."
+    "I study how non-idealities in **analog compute-in-memory (CIM)** hardware affect neural network inference, and design **hardware-aware algorithms** to improve robustness and efficiency.",
+    "I am a master’s student at the School of Integrated Circuit Science and Engineering, Beihang University. I received my B.Eng. in Electronic Information Engineering from Beihang University."
   ],
   "interest_title": "Research interests",
   "interests": [
@@ -126,7 +126,7 @@
       "short": "ELISA",
       "title": "Energy-Linear Interpolation with Stability Analysis",
       "category": "Error modeling · Calibration",
-      "summary": "Designed layer-wise and column-wise compensation, combining an input-L2-norm-conditioned error model, endpoint interpolation, and stratified calibration sampling.",
+      "summary": "Analog CIM errors vary across layers and inputs. I conceived and designed a calibration method that uses the input L2 norm to condition layer-wise and column-wise compensation, combining endpoint interpolation with stratified calibration sampling.",
       "result": "Mean MAE decreased from 2.4350 to 2.0680 across 60 layers, using 100 frames per layer at noise level 7.0.",
       "repo": "https://github.com/singledog957/ACTIC2025",
       "paper_state": "no_paper",
@@ -137,7 +137,7 @@
       "short": "ADAPT",
       "title": "Layered training under compound noise",
       "category": "Gradient estimation · Distillation",
-      "summary": "Used an AI-assisted research process to design and evaluate Pathwise gradients for continuous noise, Hard-STE for ADC quantization, knowledge distillation, and noise sampling strategies.",
+      "summary": "Analog noise and ADC quantization pose different challenges for hardware-aware training. I conceived and designed a training framework combining Pathwise gradients for continuous noise, Hard-STE for quantization, and knowledge distillation, with an experimental design comparing gradient estimators and noise sampling strategies.",
       "result": "Across 12 CIFAR-10 configurations and three training seeds each, logits KD improved accuracy by about 1.02–1.34 percentage points across six gradient/sampling settings.",
       "repo": "",
       "paper_state": "no_paper",
