@@ -27,3 +27,5 @@
 .expand-list[open] .expand-chevron{transform:rotate(180deg)}
 .expanded-items{padding-top:30px}
 @media(max-width:700px){.project-metrics{gap:26px}.demo-title{gap:8px;flex-wrap:wrap}.demo-logo{height:22px}}
+
+.paper h3 a{color:inherit}.paper h3 a:hover{color:var(--blue)}.research-item .research-competition{font-size:13px;color:var(--blue);margin:-3px 0 14px}

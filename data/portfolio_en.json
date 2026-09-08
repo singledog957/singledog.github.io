@@ -29,8 +29,8 @@
   "view_research": "Explore research",
   "papers_title": "Publications",
   "papers_subtitle": "Published, accepted, and submitted work",
-  "research_title": "Research",
-  "research_subtitle": "Noise modeling and robust inference",
+  "research_title": "Research Projects",
+  "research_subtitle": "CIM algorithms & competition projects",
   "engineering_title": "Engineering",
   "engineering_subtitle": "Electronic design and implementation",
   "projects_title": "Other projects",
@@ -123,44 +123,15 @@
   ],
   "research": [
     {
-      "short": "CNKD",
-      "title": "Noise-robust distillation for vision transformers",
-      "category": "Noise-aware training · Data efficiency",
-      "summary": "Implemented clean-teacher / noisy-student distillation with clean-weight restoration, gradient scaling, and vulnerability-guided mixed sampling. Studied the trade-off between robust accuracy and training data access.",
-      "result": "49.14% fewer training sample visits with a 0.74-point Top-1 trade-off on ViT-Tiny at σ=0.2, relative to the project’s 50%-ImageNet training pool; evaluated over five noise realizations.",
-      "repo": "",
-      "paper_state": "review",
-      "paper_url": ""
-    },
-    {
-      "short": "RBGR",
-      "title": "Backward-only residual gradient reweighting",
-      "category": "Robust inference · Autograd",
-      "summary": "Reweighted shortcut gradients only during backpropagation, preserving the forward graph and inference parameter count. Evaluated robustness to weight perturbations and software ADC quantization.",
-      "result": "91.98% accuracy on ResNet-18 / CIFAR-10 with 5-bit software ADC and α=0.8: 1.64 percentage points above Standard in this configuration.",
-      "repo": "",
-      "paper_state": "forthcoming",
-      "paper_url": ""
-    },
-    {
-      "short": "ACTIC",
-      "title": "Error compensation and calibration for analog CIM",
+      "short": "ELISA",
+      "title": "Energy-Linear Interpolation with Stability Analysis",
       "category": "Error modeling · Calibration",
       "summary": "Designed layer-wise and column-wise compensation, combining an input-L2-norm-conditioned error model, endpoint interpolation, and stratified calibration sampling.",
       "result": "Mean MAE decreased from 2.4350 to 2.0680 across 60 layers, using 100 frames per layer at noise level 7.0.",
       "repo": "https://github.com/singledog957/ACTIC2025",
       "paper_state": "no_paper",
-      "paper_url": ""
-    },
-    {
-      "short": "INFER",
-      "title": "Implicit neural representations of CIM noise",
-      "category": "Implicit representations · Physical priors",
-      "summary": "Built a two-stage SIREN residual model with ideal multiplication and scaling as physical priors to capture cell-level and array-level non-idealities.",
-      "result": "Validation MSE of 8.623 for a fixed weight and gain configuration on a 128×128 array; experiments also covered 448×448 arrays.",
-      "repo": "",
-      "paper_state": "forthcoming",
-      "paper_url": ""
+      "paper_url": "",
+      "competition": "Competition: Advanced Computing Technology Innovation Competition (ACTIC)"
     },
     {
       "short": "ADAPT",
@@ -170,7 +141,8 @@
       "result": "Across 12 CIFAR-10 configurations and three training seeds each, logits KD improved accuracy by about 1.02–1.34 percentage points across six gradient/sampling settings.",
       "repo": "",
       "paper_state": "no_paper",
-      "paper_url": ""
+      "paper_url": "",
+      "competition": "Competition: 2026 Inno CIM University Challenge (存算一体高校挑战赛)"
     }
   ],
   "engineering": [
